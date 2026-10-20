@@ -1,0 +1,29 @@
+[project]
+name = "word-preprocessing"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "BB435", email = "82220279+BB435@users.noreply.github.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "ja-stopword-filter>=0.3.0",
+    "sudachidict-full>=20261015",
+    "sudachipy>=0.7.0",
+    "yake>=0.7.3",
+]
+
+[project.scripts]
+word-preprocessing = "word_preprocessing:main"
+
+[build-system]
+requires = ["uv_build>=0.13.1,<0.14.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+    "ruff>=0.17.1",
+    "ty>=0.0.89",
+]
