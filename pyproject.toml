@@ -1,7 +1,7 @@
 [project]
 name = "word-preprocessing"
 version = "0.1.0"
-description = "Add your description here"
+description = "Japanese noun keyword extraction with SudachiPy and YAKE"
 readme = "README.md"
 authors = [
     { name = "BB435", email = "82220279+BB435@users.noreply.github.com" }
